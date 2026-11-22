@@ -29,7 +29,7 @@ function populateVdcDropdown() {
     const vdcDropdown = document.getElementById("vdc");
     const allOption = document.createElement("option");
     allOption.value = "ALL";
-    allOption.textContent = "प्रसौनी गाउँपालिका (समग्र)";
+    allOption.textContent = "सिम्रौनगढ नगरपालिका (समग्र)";
     vdcDropdown.appendChild(allOption);
     const vdcOptions = [...new Set(csvData.map(item => item.vdc))].sort();
     vdcOptions.forEach(vdc => {
